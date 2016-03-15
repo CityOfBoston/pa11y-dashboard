@@ -20,7 +20,7 @@ var config = {
 	"port": process.env.PORT,
 	"noindex": true,
 	"readonly": false,
-	"webservice": "https://cob-pa11y-dashboard-api.herokuapp.com/app"
+	"webservice": process.env.SERVICE_URI
 };
 
 require('./app')(config, function (err, app) {
