@@ -46,7 +46,6 @@
     "request": "~2.27"
   },
   "scripts": {
-		"prestart": "node createJSON.js",
     "start": "node ."
   }
 }
