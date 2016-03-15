@@ -6,12 +6,7 @@ var obj = {
 	"noindex": true,
 	"readonly": false,
 
-	"webservice": {
-		"database": process.env.MONGOLAB_URI,
-		"host": process.env.HOST,
-		"port": 3000,
-		"cron": "0 30 0 * * *"
-	}
+	"webservice": "https://cob-pa11y-dashboard-api.herokuapp.com"
 }
 
 jsonfile.writeFile(file, obj, function (err) {
