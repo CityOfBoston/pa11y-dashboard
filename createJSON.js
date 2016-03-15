@@ -8,7 +8,7 @@ var obj = {
 
 	"webservice": {
 		"database": process.env.MONGOLAB_URI,
-		"host": "0.0.0.0",
+		"host": process.env.HOST,
 		"port": 3000,
 		"cron": "0 30 0 * * *"
 	}
