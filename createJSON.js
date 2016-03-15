@@ -2,7 +2,7 @@ var jsonfile = require('jsonfile')
 
 var file = './config/production.json'
 var obj = {
-	"port": 8000,
+	"port": process.env.PORT,
 	"noindex": true,
 	"readonly": false,
 
