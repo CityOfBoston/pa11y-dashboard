@@ -19,7 +19,7 @@ var chalk = require('chalk');
 var config = {
 	"port": process.env.PORT,
 	"noindex": true,
-	"readonly": false,
+	"readonly": process.env.READ_ONLY === "true",
 	"webservice": process.env.SERVICE_URI
 };
 
